@@ -36,3 +36,5 @@
 6. What if the package-lock.json is deleted, will this impact?
 7. What can be done with Interpolation
 8. What can not be done with interpolation
+9. Differnce between TypeScript and JavaScript
+10. Difference between Scripting and Programming language
