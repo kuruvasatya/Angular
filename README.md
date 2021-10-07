@@ -23,6 +23,9 @@
 - tsconfig files =>type script configuration
 - karma.config.js => test configuration
 - polyfills.ts 
+
+## Interpolation
+- {{property}} = used to fetch data from app-component.js to html page
  
 ## Questions
 1. Difference between CLient-Side and Server-Side Application
