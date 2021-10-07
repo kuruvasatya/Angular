@@ -34,3 +34,5 @@
 4. what happens if you delete package.json
 5. What is the differnce between package.json and package-lock.json
 6. What if the package-lock.json is deleted, will this impact?
+7. What can be done with Interpolation
+8. What can not be done with interpolation
