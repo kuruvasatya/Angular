@@ -1,0 +1,14 @@
+<h1>I am component</h1>
+
+<button (click)="getName('satya')">get Name</button><br><br>
+<button (click)="getCost(5200)">get Expence</button><br><br>
+<button (click)="getId('17121a05a6')">get id</button><br><br>
+<button (click)="getData(true)">get Name</button><br><br>
+
+<input type = "text" #box1 placeholder="Enter your name" (blur)="getData(box1.value)"> <br><br>
+
+<h1 (mouseover) = "getData('mouse hovered' )">Mouse Hover</h1> <br><br>
+
+<button (click)="increment()"> + </button>   
+<button (click)="decrement()"> - </button>
+<br> the value is {{count}}
