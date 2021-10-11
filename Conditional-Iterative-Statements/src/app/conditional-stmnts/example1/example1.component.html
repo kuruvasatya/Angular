@@ -1,0 +1,27 @@
+
+
+
+<p>example1 works!</p>
+
+<h1 [style.color]="headingColor">If statement</h1>
+<p *ngIf="show">
+    if: The statement is true
+</p>
+
+<h1 [style.color]="headingColor">If else statement</h1>
+<p *ngIf="show; then ifBlock else elseBlock"></p> 
+<ng-template #ifBlock>
+    ifelse: statement is true
+</ng-template>
+<ng-template #elseBlock>
+    ifelse: statement is false
+</ng-template>
+
+<h1 [style.color]="headingColor">Switch statement</h1>
+<div [ngSwitch]="color">
+    <h3 *ngSwitchCase="'red'" style="color:red"> Red color</h3>
+    <h3 *ngSwitchCase="'green'" style="color:green"> green color</h3>
+    <h3 *ngSwitchCase="'grey'" style="color:grey"> grey color</h3>
+    <h3 *ngSwitchCase="'pink'" style="color:pink"> Pink color</h3>
+    <h3 *ngSwitchDefault>default color </h3>
+</div>
