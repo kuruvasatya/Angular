@@ -1,0 +1,13 @@
+<p>template-driven works!</p>
+<form #form="ngForm" (submit)="getData(form.value)"> 
+    <input type="email" required name = "email" email placeholder="Enter email" ngModel #email="ngModel"> <br>
+    <span *ngIf="email.invalid && email.touched" style="color:red">Enter a valid input</span><br>
+    <input type="password" name= "password" minlength="2" placeholder="Enter password" ngModel #password="ngModel"><br>
+    <span *ngIf="password.invalid && password.touched" style="color:red">Enter a valid input</span><br>
+    <button [disabled]="form.invalid">Submit</button>
+</form>
+
+<div *ngIf="display">
+    <h3>Entered UserName is: {{user.email}}</h3>
+    <h3>Entered Password is: {{user.password}}</h3>
+</div>

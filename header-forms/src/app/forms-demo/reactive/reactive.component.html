@@ -1,0 +1,12 @@
+<p>reactive works!</p>
+<form [formGroup] = "loginForm" (ngSubmit)="getData()">
+    <input type="email" formControlName="user"><br>
+    <span style="color:red" *ngIf="user && user.invalid && user.touched">Enter a valid input</span><br>
+    <input type="password" formControlName="password"><br>
+    <button>Submit</button>
+</form>
+
+<div *ngIf="display">
+    {{loginForm.value.user}} <br>
+    {{loginForm.value.password}}
+</div>

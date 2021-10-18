@@ -1,0 +1,14 @@
+<p>form-component works!</p>
+
+<form #form="ngForm" (submit) = "getdata(form.value)">
+    <input type = "text" ngModel name ="username" placeholder="Enter your name"> <br><br>
+    <input type = "password" ngModel name= "password" placeholder = "Enter your password"><br><br>
+    <button> submit</button>
+</form>
+
+<h3 *ngIf="display">
+    <ul>
+        <li>username : {{userData.username}}</li>
+        <li>password : {{userData.password}}</li>
+    </ul>
+</h3>
