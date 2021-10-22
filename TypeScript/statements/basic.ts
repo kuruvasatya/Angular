@@ -10,7 +10,7 @@ console.log("Sum of scores is " + sum);
 
 for(let score of scores){
     sum += score;
-}
+} 
 avg = sum/scores.length;
 
 console.log(avg);
