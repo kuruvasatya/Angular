@@ -1,0 +1,12 @@
+<h1> Angular Pipes</h1>
+
+
+<ul>
+  <li> {{ course.title | uppercase }}</li>
+  <li> {{ course.studentsCount | number }} </li>
+  <li> {{ course.rating | number:'1.2-2' }} </li>
+  <li> {{ course.price | currency}} </li>
+  <li> {{ course.price | currency : 'INR'}}</li>
+  <li> {{ course.releaseDate | date }} </li>
+  <li> {{ course.preview | summary}} </li>
+</ul>
