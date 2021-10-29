@@ -1,0 +1,9 @@
+<p>task1 works!</p>
+
+<button
+    class = "btn"
+    [class.btn-primary]= "isFav"
+    [class.btn-danger] = "!isFav"
+    (click) = "onClick()">bookmark</button>
+
+

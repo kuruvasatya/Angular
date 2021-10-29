@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+    margin-top : 2%;
+    margin-left : 10%;
+    margin-right : 10%;
+    margin-bottom : 2%;
+}

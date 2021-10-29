@@ -1,0 +1,28 @@
+.zippy {
+    border:1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 3%;
+    margin-bottom : 3%;
+}
+
+.zippy-heading {
+    font-weight: bold;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.zippy-body {
+    padding: 2%;
+}
+
+.zippy-expanded{ 
+    background-color: #f0f0f0;
+}
+
+.bi-chevron-down {
+    float: right;
+}
+
+.bi-chevron-up {
+    float: right;
+}
