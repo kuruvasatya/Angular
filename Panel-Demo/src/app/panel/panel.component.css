@@ -1,0 +1,24 @@
+.panel{
+    border:1px solid #CCC;
+    border-radius: 2px;
+}
+
+.heading{
+    cursor:pointer;
+    font-weight: bold;
+    padding:2%;
+}
+
+.body{
+    padding:2%;
+}
+
+.bi-chevron-up,.bi-chevron-down{
+    float: right;
+}
+
+.panel-expanded{
+    background-color:#f0f0f0;
+   
+}
+

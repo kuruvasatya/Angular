@@ -1,0 +1,13 @@
+<div class="panel">
+    <div class="heading" [class.panel-expanded] = "clicked"
+     (click)="toggle()">
+        {{title}}
+        <span [ngClass]= "{
+            'bi bi-chevron-up': clicked,
+            'bi bi-chevron-down': !clicked
+        }"></span>
+    </div>
+    <div class="body" *ngIf="clicked">
+        <ng-content></ng-content>
+    </div>
+</div>

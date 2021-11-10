@@ -1,0 +1,28 @@
+<form [formGroup]="form">
+    <div class="form-group">
+        <label for="name">Instructor Name</label>
+        <input type="text" formControlName="name" name="name" id="name" class="form-control">
+        <div *ngIf="!name.valid && name.touched" style="color:red;font-size:12px">*Enter your name</div>
+    </div>   
+    <div class="form-group" formGroupName="contact">
+        <label for="email">Email</label>
+        <input type="text" formControlName="email" name="email" id="email" class="form-control">
+        <div *ngIf="!email.valid && email.touched" style="color:red;font-size:12px">*Enter a valid email</div>
+        <label for="phone">Phone</label>
+        <input type="text" formControlName="phone" name="phone" id="phone" class="form-control">
+        <div *ngIf="!phone.valid && phone.touched">
+            <div *ngIf="phone.errors!.minlength" style="color:red;font-size:12px">Minimum length is 10</div>
+            <div *ngIf="phone.errors!.maxlength" style="color:red;font-size:12px">Maximum length is 10</div>
+            <div *ngIf="phone.errors!.pattern" style="color:red;font-size:12px">Enter a valid number</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="subjects">Subjects</label>
+        <input type="text" id="subjects" class="form-control" #subject (keyup.enter)="addTopic(subject)">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let sub of subjects.controls" (click)="removeTopic(sub)">
+                {{sub.value}}
+            </li>
+        </ul>
+    </div>
+</form>

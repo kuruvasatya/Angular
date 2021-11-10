@@ -1,0 +1,20 @@
+
+<form #form="ngForm">
+    <div class="form-group">
+        <label for="username">UserName</label>
+        <input type="text" ngModel #username="ngModel" id ="username" name="username" required minlength=9 pattern="[a-z]+@gmail.com" class="form-control">
+        <div *ngIf="username.touched && !username.valid" style="color:red">
+            <div *ngIf="username.errors!.required">*Enter username</div>
+            <div *ngIf="username.errors!.minlength">*minlength is 9</div>
+            <div *ngIf="username.errors!.pattern">*should end with @gmail.com</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea ngModel name="comment" id="comment" cols="30" rows="10" class="form-control">
+        </textarea>
+    </div>
+    <button [disabled]="!form.valid" class="btn btn-primary">submit</button>
+</form>
+
+{{form.value | json}}

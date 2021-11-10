@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BasicModule } from './basic/basic.module';
 import { DynamicModule } from './dynamic/dynamic.module';
 
+import { ChildRouterModule } from './child-router/child-router.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +16,8 @@ import { DynamicModule } from './dynamic/dynamic.module';
     BrowserModule,
     AppRoutingModule,
     BasicModule,
-    DynamicModule
+    DynamicModule,
+    ChildRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
